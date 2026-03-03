@@ -4,22 +4,22 @@ import { section } from "framer-motion/client";
 
 export default function CTASection() {
     return (
-        <section className="bg-[#FAFFE5] h-[844px] ">
+        <section className="bg-[#FAFFE5] border-t border-black/10 h-auto py-24">
             {/* Top Banner section */}
 
-            <div className="p-20 max-w-7xl bg-[#FAFFE5] mx-auto px-6 space-y-8">
+            <div className="  max-w-7xl bg-[#FAFFE5] mx-auto  space-y-8">
 
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 h-auto md:h-[686px]">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 h-auto md:h-[686px]">
 
                     {/* Left Green Box */}
-                    <div className="bg-[#607315] rounded-[40px] p-10 md:p-14 flex flex-col  justify-center text-white shadow-xl h-full">
+                    <div className="bg-[#607315] rounded-[40px] p-6 sm:p-10 md:p-14 flex flex-col justify-center text-white shadow-xl h-full">
                         <div className="">
                             <span className="text-white/80 font-medium text-xl border-white/30 pb-1 inline-block mb-2">Expert skin care</span>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold leading-tight">
                                 Redefine timeless <br /> beauty with our care
                             </h2>
-                            <button className="flex items-center gap-2 bg-white text-2xl text-[#4E612B] font-medium px-10 py-4 my-12 rounded-full hover:bg-[#F2F5E9] transition">
+                            <button className="flex items-center gap-2 bg-white text-lg md:text-2xl text-[#4E612B] font-medium px-6 py-3 md:px-10 md:py-4 my-8 md:my-12 rounded-full hover:bg-[#F2F5E9] transition">
                                 Shop Now <ChevronRight size={24} />
                             </button>
                         </div>
@@ -75,10 +75,10 @@ export default function CTASection() {
                             className="object-cover"
                         />
                     </div>
-                    
+
                 </div>
 
-                
+
 
             </div>
 

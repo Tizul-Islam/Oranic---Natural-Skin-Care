@@ -19,7 +19,7 @@ export default function FAQ() {
     };
 
     return (
-        <section className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center bg-white">
+        <section className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center bg-white">
             {/* FAQ Accordion */}
             <div className="space-y-8">
                 <div>

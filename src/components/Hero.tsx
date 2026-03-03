@@ -3,7 +3,7 @@ import { ArrowRight, ArrowUpRight, Star } from "lucide-react";
 
 export default function Hero() {
     return (
-        <section className="relative w-full h-[130vh] min-h-[600px] flex items-center overflow-hidden">
+        <section className="relative w-full h-[100vh] lg:h-[130vh] min-h-[600px] flex items-center overflow-hidden">
 
             {/* Background Image */}
             <Image
@@ -26,7 +26,7 @@ export default function Hero() {
             {/* Dark gradient overlay to make text readable */}
             {/* <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div> */}
 
-            <div className="relative mt-130 z-10 max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between">
+            <div className="relative mt-24 lg:mt-110 z-10 max-w-7xl mx-auto px-6 w-full flex flex-col md:flex-row items-center justify-between">
 
                 {/* Left Content */}
                 <div className="max-w-xl text-white space-y-6 pt-20">
@@ -42,9 +42,9 @@ export default function Hero() {
                 </div>
 
                 {/* Floating Product Card */}
-                <div className="flex items-center mt-9 justify-center = p-6 font-sans">
+                <div className="flex items-center mt-10 md:mt-9 justify-center p-6 font-sans w-full md:w-auto">
                     {/* Main Card Container */}
-                    <div className="w-[330px] h-[380px] bg-white rounded-[0.8rem] p-6 shadow-sm border border-stone-100 group transition-all duration-300 hover:shadow-md">
+                    <div className="w-full max-w-[330px] h-auto md:h-[380px] bg-white rounded-[0.8rem] p-6 shadow-sm border border-stone-100 group transition-all duration-300 hover:shadow-md">
 
                         {/* Header: Title, Price, and Icon */}
                         <div className="flex justify-between items-start mb-6">
@@ -69,7 +69,7 @@ export default function Hero() {
                             <img
                                 src="/c1.png"
                                 alt="Cucumber Extract Product"
-                                className="w-[300px] h-[245px] object-cover transition-transform duration-500 group-hover:scale-105"
+                                className="w-full md:w-[300px] h-[245px] object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                         </div>
                     </div>

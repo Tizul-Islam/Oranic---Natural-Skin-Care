@@ -37,10 +37,10 @@ export default function Categories() {
     };
 
     return (
-        <section className="py-20 bg-[#F2F5E9] overflow-hidden">
+        <section className="py-24 bg-[#F2F5E9] overflow-hidden">
             <div className="max-w-7xl mx-auto px-6">
 
-                <div className="flex items-end justify-between mb-12">
+                <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6 md:gap-0">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1C2413]">
                         Choose by Category
                     </h2>

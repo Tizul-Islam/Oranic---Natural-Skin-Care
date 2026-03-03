@@ -3,7 +3,7 @@ import { Leaf, Award, Recycle, ShieldCheck, ArrowUpRight, ArrowRight } from "luc
 
 export default function Features() {
     return (
-        <section className=" pl-20 flex flex-col  lg:flex-row items-center gap-16 bg-[#ffffff]">
+        <section className="px-6 lg:pl-26 lg:pr-0 pb-12 lg:pb-0 flex flex-col lg:flex-row items-center  bg-[#ffffff]">
             <div className="flex-1 space-y-12">
                 <div className="max-w-md">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1C2413] leading-tight mb-4">
@@ -60,9 +60,9 @@ export default function Features() {
                     </div>
                 </div>
 
-                <div className="flex items-center gap-6 pt-6">
-                
-                    <div className="flex items-center gap-6">
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6 pt-6">
+
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-6">
 
                         {/* Learn More Button */}
                         <button className="bg-[#5F7216] text-white px-10 py-4 rounded-full text-lg font-serif">
@@ -73,19 +73,22 @@ export default function Features() {
                         <div className="flex items-center -space-x-4">
 
                             {[1, 2, 3, 4].map((item) => (
-                                <Image
+                                <div
                                     key={item}
-                                    src={`/p${item}.jpg`}
-                                    width={52}
-                                    height={52}
-                                    alt="User"
-                                    className="rounded-full border-[3px] border-[#5F7216] object-cover"
-                                />
+                                    className="relative w-[52px] h-[52px] rounded-full overflow-hidden border-[3px] border-[#5F7216]"
+                                >
+                                    <Image
+                                        src={`/p${item}.jpg`}
+                                        alt="User"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                </div>
                             ))}
 
                             {/* Arrow Circle */}
                             <div className="w-[56px] h-[56px] rounded-full bg-[#5F7216] flex items-center justify-center">
-                                <ArrowUpRight size={25} />
+                                <ArrowUpRight size={25} className="text-white" />
                             </div>
 
                         </div>

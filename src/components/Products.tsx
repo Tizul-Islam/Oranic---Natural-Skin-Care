@@ -1,4 +1,4 @@
-"use client"; 
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 
@@ -20,14 +20,14 @@ export default function Products() {
     const [selectedCategory, setSelectedCategory] = useState("All");
 
     // ফিল্টারিং লজিক: যদি 'All' হয় তবে সব দেখাবে, নাহলে ক্যাটাগরি অনুযায়ী ফিল্টার করবে
-    const filteredProducts = selectedCategory === "All" 
-        ? products 
+    const filteredProducts = selectedCategory === "All"
+        ? products
         : products.filter((p) => p.type === selectedCategory);
 
     return (
         <section className="py-24 bg-white">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-8">
+                <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6 md:gap-8">
                     <div>
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1C2413] mb-4">
                             Popular Products
@@ -37,11 +37,10 @@ export default function Products() {
                                 <button
                                     key={category}
                                     onClick={() => setSelectedCategory(category)}
-                                    className={`px-5 py-2 rounded-full font-medium transition ${
-                                        selectedCategory === category
-                                            ? "bg-[#4E612B] text-white" 
+                                    className={`px-5 py-2 rounded-full font-medium transition ${selectedCategory === category
+                                            ? "bg-[#4E612B] text-white"
                                             : "bg-[#F2F5E9] text-[#4E612B] hover:bg-[#E5EAD7]"
-                                    }`}
+                                        }`}
                                 >
                                     {category}
                                 </button>
@@ -50,11 +49,10 @@ export default function Products() {
                     </div>
 
                     {/* View All বাটন: এখানে ক্লিক করলে setSelectedCategory("All") হবে */}
-                    <button 
+                    <button
                         onClick={() => setSelectedCategory("All")}
-                        className={`text-[#4E612B] text-2xl border border-[#4E612B] py-5 px-8 rounded-full font-medium hover:text-[#1C2413] flex items-center gap-2 transition group whitespace-nowrap ${
-                            selectedCategory === "All" ? "bg-[#F2F5E9]" : "bg-transparent"
-                        }`}
+                        className={`text-[#4E612B] text-2xl border border-[#4E612B] py-5 px-8 rounded-full font-medium hover:text-[#1C2413] flex items-center gap-2 transition group whitespace-nowrap ${selectedCategory === "All" ? "bg-[#F2F5E9]" : "bg-transparent"
+                            }`}
                     >
                         View All
                     </button>

@@ -10,7 +10,7 @@ const GallerySection = () => {
   ];
 
   return (
-    <section className="bg-[#FAFFE5] py-16 px-4 md:px-8">
+    <section className="bg-[#FAFFE5] border-t border-black/10 py-24 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {categories.map((item) => (

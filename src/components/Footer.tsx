@@ -1,16 +1,21 @@
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-
+import {
+    FaFacebookF,
+    FaInstagram,
+    FaWhatsapp,
+    FaYoutube,
+} from "react-icons/fa";
 export default function Footer() {
     return (
         <footer className="bg-[#4E612B] text-[#F7F8EE] pt-24 pb-8 overflow-hidden relative">
             <div className="max-w-7xl mx-auto px-6 mb-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 text-sm">
 
-                <div className="space-y-4">
+                {/* <div className="space-y-4">
                     <h4 className="font-bold mb-6 text-white text-lg font-serif tracking-widest uppercase">ORANIC</h4>
                     <p className="opacity-80 leading-relaxed font-light">
                         Bringing the pure essence of nature directly to your skincare routine. Organic, cruelty-free, and beautiful.
                     </p>
-                </div>
+                </div> */}
 
                 <div className="space-y-4">
                     <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Product</h4>
@@ -43,7 +48,7 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="lg:col-span-1 space-y-4">
+                <div className="col-span-2 lg:col-span-2 space-y-4">
                     <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Stay in Touch</h4>
                     <p className="opacity-80 font-light mb-4">Subscribe to our newsletter for 10% off your first order.</p>
                     <div className="flex bg-white/10 rounded-full p-1 border border-white/20 focus-within:border-white/50 transition">
@@ -57,22 +62,41 @@ export default function Footer() {
                         </button>
                     </div>
 
-                    <div className="flex gap-4 mt-8 pt-4">
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition"><Facebook size={18} /></a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition"><Twitter size={18} /></a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition"><Instagram size={18} /></a>
-                        <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition"><Linkedin size={18} /></a>
+                    {/* Social Icons Placeholder */}
+                    <div className="flex gap-4">
+                        {[
+                            { Icon: FaFacebookF, color: "#1877F2", label: "Facebook" },
+                            { Icon: FaInstagram, color: "#E4405F", label: "Instagram" },
+                            { Icon: FaWhatsapp, color: "#25D366", label: "WhatsApp" },
+                            { Icon: FaYoutube, color: "#FF0000", label: "YouTube" },
+                        ].map((social, index) => (
+                            <a
+                                key={index}
+                                href="#"
+                                aria-label={social.label}
+                                className="w-10 h-10 bg-[#F9FBE7] rounded-full flex items-center justify-center transition-transform hover:scale-110 active:scale-95"
+                            >
+                                <social.Icon
+                                    style={{ color: social.color }}
+                                    className="text-xl"
+                                />
+                            </a>
+                        ))}
                     </div>
                 </div>
 
             </div>
 
             {/* Huge ORANIC Text */}
-            <div className="flex justify-center flex-col items-center border-t border-white/10 pt-10">
-                <h1 className="text-[15vw] leading-none font-serif font-bold text-transparent bg-clip-text bg-gradient-to-t from-[#6B833A] to-[#F7F8EE]/30 tracking-widest select-none">
+            <div className="flex justify-center flex-col items-center border-t border-white/10 pt-10 ">
+                <p className="opacity-50 text-xs mt-2">&copy; {new Date().getFullYear()} Oranic Cosmetics. All Rights Reserved.</p>
+                {/* <h1 className="text-[15vw]  bg-clip-text bg-gradient-to-b from-white via-white/80 to-transparent leading-none font-serif font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#6B833A] to-[#F7F8EE]/30 tracking-widest select-none">
+                    ORANIC
+                </h1> */}
+
+                <h1 className="text-[20vw] bg-clip-text bg-gradient-to-b from-white via-white/90 to-transparent leading-[0.8] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-[#6B833A] to-[#F7F8EE]/30 tracking-widest select-none">
                     ORANIC
                 </h1>
-                <p className="opacity-50 text-xs mt-2">&copy; {new Date().getFullYear()} Oranic Cosmetics. All Rights Reserved.</p>
             </div>
         </footer>
     );

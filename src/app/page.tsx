@@ -19,7 +19,7 @@ export default function Home() {
       <Header />
       <Hero />
       <Brand/>
-      <Features />``
+      <Features />
       <Categories />
       <Products />
       <MiddleBanner />

@@ -12,16 +12,16 @@ export const BeautyStore = () => {
   return (
     <div className="relative w-full max-w-8xl mx-auto aspect-video overflow-hidden cursor-ew-resize select-none ">
       {/* ১. মেইন ইমেজ (সব সময় ক্লিয়ার থাকবে) */}
-      <img 
-        src="/ch1.png" 
-        className="absolute inset-0 w-full h-full object-cover" 
-        alt="Clear" 
+      <img
+        src="/ch1.png"
+        className="absolute inset-0 w-full h-full object-cover"
+        alt="Clear"
       />
 
       {/* ২. ব্লার লেয়ার: এটি ডান দিকে থাকবে এবং স্লাইডার পজিশন অনুযায়ী ক্লিপ হবে */}
       <div
         className="absolute inset-0 w-full h-full overflow-hidden transition-all duration-100"
-        style={{ 
+        style={{
           clipPath: `inset(0 0 0 ${sliderPos}%)`, // এটি ডান পাশের অংশ ঢেকে রাখবে
           backdropFilter: `blur(${blurValue}px)`, // ডাইনামিক ব্লার
           backgroundColor: 'rgba(255, 255, 255, 0.05)' // হালকা গ্লাস ইফেক্ট
@@ -30,10 +30,10 @@ export const BeautyStore = () => {
       </div>
 
       {/* লেবেল সমূহ */}
-      <span className="absolute bottom-8 left-8 bg-white/80 backdrop-blur-sm text-[#606c1e] px-6 py-2 rounded-lg font-serif z-30">
+      <span className="absolute bottom-4 left-4 md:bottom-8 md:left-8 bg-white/80 backdrop-blur-sm text-[#606c1e] px-3 md:px-6 py-1 md:py-2 rounded-lg font-serif z-30 text-xs md:text-base">
         Blur
       </span>
-      <span className="absolute bottom-8 right-8 bg-white/80 backdrop-blur-sm text-[#606c1e] px-6 py-2 rounded-lg font-serif z-30">
+      <span className="absolute bottom-4 right-4 md:bottom-8 md:right-8 bg-white/80 backdrop-blur-sm text-[#606c1e] px-3 md:px-6 py-1 md:py-2 rounded-lg font-serif z-30 text-xs md:text-base">
         Clear
       </span>
 
@@ -51,8 +51,8 @@ export const BeautyStore = () => {
         className="absolute top-0 bottom-0 w-1 bg-white z-30 shadow-[0_0_15px_rgba(0,0,0,0.3)]"
         style={{ left: `${sliderPos}%` }}
       >
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-2xl flex items-center justify-center">
-          <div className="flex gap-1 text-[#606c1e] font-bold">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-8 md:w-12 md:h-12 bg-white rounded-full shadow-2xl flex items-center justify-center">
+          <div className="flex gap-1 text-[#606c1e] font-bold text-xs md:text-base">
             <span>❮</span><span>❯</span>
           </div>
         </div>

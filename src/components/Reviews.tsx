@@ -4,7 +4,7 @@ import { Star, ArrowLeft, ArrowRight } from "lucide-react";
 export default function Reviews() {
     return (
         <section className=" bg-[#F2F5E9] overflow-hidden">
-            <div className="py-24 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-25 items-center">
+            <div className="py-24 max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-25 items-center">
 
                 {/* Left Side: Testimonial */}
                 <div className="space-y-10 order-2 lg:order-1 relative z-10">
@@ -12,8 +12,8 @@ export default function Reviews() {
                         Customer Reviews!
                     </h2>
 
-                    <div className="relative py-16 ">
-                        <p className=" text-2xl pr-28 md:text-2xl font-serif leading-snug text-[#4E612B]">
+                    <div className="relative py-8 md:py-16">
+                        <p className="text-xl md:text-2xl pr-0 md:pr-28 font-serif leading-snug text-[#4E612B]">
                             “I’ve been using this cream for three weeks now, and the results are simply amazing.
                             My skin has become more moisturized, supple, nd radiant.
                             The texture is light, absorbs quickly, and doesn’t leave a greasy shine.”
@@ -64,7 +64,7 @@ export default function Reviews() {
                     />
 
                     {/* Floating Product Card */}
-                    <div className="absolute top-1/2 -translate-y-1/2 -left-10 lg:-left-38 bg-white p-2 rounded-lg shadow-2xl flex flex-col items-center gap-3 border border-gray-100 min-w-[281px] h-[382px] z-20">
+                    <div className="absolute -bottom-12 left-1/2 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-translate-x-0 lg:-left-38 bg-white p-2 rounded-lg shadow-2xl flex sm:hidden lg:flex flex-col items-center gap-3 border border-gray-100 min-w-[281px] h-[382px] z-20 scale-75 lg:scale-100 origin-bottom lg:origin-center">
                         <div className="relative aspect-square w-full h-[290px] rounded-lg bg-[#F2F5E9] overflow-hidden">
                             <Image
                                 src="/product.png"
@@ -73,27 +73,27 @@ export default function Reviews() {
                                 className="object-cover"
                             />
                             <div className="absolute left-0 top-0 bg-[#606c1e] text-white text-lg font-bold p-6 py-2 rounded-br-3xl shadow-sm">
-                                        10%
-                                    </div>
+                                10%
+                            </div>
                         </div>
                         <div className="flex gap-10 pb-2 justify-between items-center px-1">
-                                <div className="flex flex-col gap-1">
-                                    <h3 className="font-serif text-[20px] text-[#1C2413] leading-tight tracking-tight">
-                                        Face Care Serum
-                                    </h3>
-                                    <div className="flex items-baseline gap-2 mt-0.5">
-                                        <span className="text-[26px] font-bold text-[#1C2413]">
-                                            $45.00
-                                        </span>
-                                        <span className="text-[#9CA3AF] line-through text-lg font-serif">
-                                            $49.00
-                                        </span>
-                                    </div>
+                            <div className="flex flex-col gap-1">
+                                <h3 className="font-serif text-[20px] text-[#1C2413] leading-tight tracking-tight">
+                                    Face Care Serum
+                                </h3>
+                                <div className="flex items-baseline gap-2 mt-0.5">
+                                    <span className="text-[26px] font-bold text-[#1C2413]">
+                                        $45.00
+                                    </span>
+                                    <span className="text-[#9CA3AF] line-through text-lg font-serif">
+                                        $49.00
+                                    </span>
                                 </div>
-                                <button className="bg-[#606c1e] mt-2 text-white px-5 py-2.5 rounded-full font-serif text-lg hover:bg-[#4d5718] transition-all duration-200 active:scale-95 shadow-lg shadow-olive-900/5">
-                                    Buy Now
-                                </button>
                             </div>
+                            <button className="bg-[#606c1e] mt-2 text-white px-5 py-2.5 rounded-full font-serif text-lg hover:bg-[#4d5718] transition-all duration-200 active:scale-95 shadow-lg shadow-olive-900/5">
+                                Buy Now
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

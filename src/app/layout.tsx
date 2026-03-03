@@ -2,15 +2,14 @@ import type { Metadata } from "next";
 import { Playfair_Display, Outfit } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
+
+import { EB_Garamond } from "next/font/google";
+
+const ebGaramond = EB_Garamond({
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Oranic - Natural Skin Care",
@@ -25,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${playfair.variable} ${outfit.variable} antialiased bg-[#FCFCF8] text-[#1a2015] font-sans`}
+        className={`${ebGaramond.className} antialiased bg-[#FCFCF8] text-[#1a2015] font-sans`}
       >
         {children}
       </body>
