@@ -65,19 +65,19 @@ export default function FAQ() {
             {/* Right Image */}
             <div className="relative w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-xl lg:h-[700px]">
                 <Image
-                    src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?q=80&w=2574&auto=format&fit=crop"
+                    src="/faq.png"
                     alt="Natural Ingredients"
                     fill
                     className="object-cover"
                 />
                 {/* Decorative Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
+                {/* <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent"></div>
                 <div className="absolute bottom-6 left-6 right-6">
                     <div className="bg-white/90 backdrop-blur p-4 rounded-xl flex items-center justify-between border border-white/40">
                         <span className="font-serif font-bold text-[#1C2413]">100% Organic</span>
                         <span className="text-[#4E612B] font-medium text-sm border-b border-[#4E612B] hover:text-[#1C2413] hover:border-[#1C2413] transition-colors cursor-pointer">Read our sourcing policy</span>
                     </div>
-                </div>
+                </div> */}
             </div>
         </section>
     );

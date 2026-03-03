@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 export default function MiddleBanner() {
     return (
-        <section className="relative w-full h-[90vh] min-h-[700px] flex items-center overflow-hidden my-12 group">
+        <section className="relative w-full h-[90vh] min-h-[700px] flex items-center overflow-hidden group">
             {/* Main Background Image */}
             <Image
                 src="/frature.png" // Replace with image_f96a60.jpg background
@@ -16,7 +16,7 @@ export default function MiddleBanner() {
             {/* Content Container */}
             <div className="relative z-10 w-full max-w-7xl mx-auto px-6 h-full flex flex-col justify-center">
                 
-                <div className="flex flex-col mt-60 md:flex-row items-center justify-between w-full gap-12">
+                <div className="flex flex-col mt-30 md:flex-row items-center justify-between w-full gap-12">
                     
                     {/* LEFT SIDE: Product Card (image_0b91b4 design) */}
                     <div className="w-full max-w-[440px]  bg-white p-5 rounded-[1.5rem] shadow-2xl self-center md:self-auto">
@@ -48,7 +48,7 @@ export default function MiddleBanner() {
                     </div>
 
                     {/* RIGHT SIDE: Hero Text */}
-                    <div className="text-left mt-60 md:text-right">
+                    <div className="text-left mt-70 md:text-right">
                         <h2 className="text-5xl md:text-7xl font-serif font-medium text-white leading-[1.1] drop-shadow-md">
                             Natural Makeup<br />For Radiant Skin
                         </h2>

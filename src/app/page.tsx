@@ -10,21 +10,25 @@ import Blog from "@/components/Blog";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import Brand from "@/components/Brand";
+import {BeautyStore} from "@/components/BeautyStore";
+import GallerySection from "@/components/GallerySection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#FCFCF8]">
+    <main className="min-h-screen ">
       <Header />
       <Hero />
       <Brand/>
-      <Features />
+      <Features />``
       <Categories />
       <Products />
       <MiddleBanner />
       <Reviews />
+      <BeautyStore/>
       <FAQ />
       <Blog />
       <CTASection />
+      <GallerySection />
       <Footer />
     </main>
   );

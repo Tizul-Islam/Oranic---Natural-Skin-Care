@@ -46,14 +46,14 @@ export default function Categories() {
                     </h2>
                     <div className="flex gap-4 pt-4">
                         {/* বাটন ক্লিকে prevSlide ফাংশন কল হবে */}
-                        <button 
+                        <button
                             onClick={prevSlide}
                             className="w-12 h-12 rounded-full border border-[#4E612B] flex items-center justify-center text-[#4E612B] hover:bg-[#4E612B] hover:text-white transition active:scale-90"
                         >
                             <ArrowLeft size={20} />
                         </button>
                         {/* বাটন ক্লিকে nextSlide ফাংশন কল হবে */}
-                        <button 
+                        <button
                             onClick={nextSlide}
                             className="w-12 h-12 rounded-full border border-[#4E612B] flex items-center justify-center text-[#4E612B] hover:bg-[#4E612B] hover:text-white transition active:scale-90"
                         >
@@ -64,7 +64,7 @@ export default function Categories() {
 
                 {/* স্লাইডিং এনিমেশনের জন্য কন্টেইনার */}
                 <div className="relative">
-                    <div 
+                    <div
                         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-transform duration-500 ease-in-out"
                     >
                         {/* slice ব্যবহার করে নির্দিষ্ট ইনডেক্সের ডাটা দেখানো হচ্ছে */}

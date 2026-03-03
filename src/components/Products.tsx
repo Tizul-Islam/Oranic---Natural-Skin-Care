@@ -62,8 +62,8 @@ export default function Products() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
                     {filteredProducts.map((p, i) => (
-                        <div key={i} className="group bl-5 rounded-lg outline-1 outline-offset-6 outline-black/30 flex flex-col cursor-pointer">
-                            <div className="relative aspect-square w-full h-[260px] rounded-lg bg-[#F2F5E9] overflow-hidden mb-4">
+                        <div key={i} className="group bl-5 rounded-lg outline-1 outline-offset-6 outline-black/30 flex flex-col cursor-pointer min-w-[281px] h-[382px]">
+                            <div className="relative aspect-square w-full h-[290px] rounded-lg bg-[#F2F5E9] overflow-hidden mb-4">
                                 <Image
                                     src={p.image}
                                     alt={p.name}
@@ -74,7 +74,7 @@ export default function Products() {
                                     {p.type}
                                 </div> */}
                                 {p.discount && (
-                                    <div className="absolute left-0 top-0 bg-[#606c1e] text-white text-lg font-bold p-6 py-2 rounded-br-xl shadow-sm">
+                                    <div className="absolute left-0 top-0 bg-[#606c1e] text-white text-lg font-bold p-6 py-2 rounded-br-3xl shadow-sm">
                                         {p.discount}%
                                     </div>
                                 )}
