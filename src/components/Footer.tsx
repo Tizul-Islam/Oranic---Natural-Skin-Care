@@ -7,8 +7,8 @@ import {
 } from "react-icons/fa";
 export default function Footer() {
     return (
-        <footer className="bg-[#4E612B] text-[#F7F8EE] pt-24 pb-8 overflow-hidden relative">
-            <div className="max-w-7xl mx-auto px-6 mb-20 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-12 text-sm">
+        <footer className="bg-[#4E612B] text-[#F7F8EE] pt-16 md:pt-24 pb-8 overflow-hidden relative px-4 md:px-6">
+            <div className="max-w-7xl mx-auto mb-16 md:mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 text-sm">
 
                 {/* <div className="space-y-4">
                     <h4 className="font-bold mb-6 text-white text-lg font-serif tracking-widest uppercase">ORANIC</h4>
@@ -18,7 +18,7 @@ export default function Footer() {
                 </div> */}
 
                 <div className="space-y-4">
-                    <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Product</h4>
+                    <h4 className="font-bold text-white mb-4 md:mb-6 uppercase tracking-wider text-xs">Product</h4>
                     <ul className="space-y-3 opacity-80 font-light">
                         <li><a href="#" className="hover:text-white transition">Skin Care</a></li>
                         <li><a href="#" className="hover:text-white transition">Body Care</a></li>
@@ -29,7 +29,7 @@ export default function Footer() {
                 </div>
 
                 <div className="space-y-4">
-                    <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Explore</h4>
+                    <h4 className="font-bold text-white mb-4 md:mb-6 uppercase tracking-wider text-xs">Explore</h4>
                     <ul className="space-y-3 opacity-80 font-light">
                         <li><a href="#" className="hover:text-white transition">About Us</a></li>
                         <li><a href="#" className="hover:text-white transition">Blog</a></li>
@@ -39,7 +39,7 @@ export default function Footer() {
                 </div>
 
                 <div className="space-y-4">
-                    <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Help</h4>
+                    <h4 className="font-bold text-white mb-4 md:mb-6 uppercase tracking-wider text-xs">Help</h4>
                     <ul className="space-y-3 opacity-80 font-light">
                         <li><a href="#" className="hover:text-white transition">FAQs</a></li>
                         <li><a href="#" className="hover:text-white transition">Shipping</a></li>
@@ -48,22 +48,22 @@ export default function Footer() {
                     </ul>
                 </div>
 
-                <div className="col-span-2 lg:col-span-2 space-y-4">
-                    <h4 className="font-bold text-white mb-6 uppercase tracking-wider text-xs">Stay in Touch</h4>
+                <div className="col-span-2 sm:col-span-3 lg:col-span-2 space-y-4 mt-4 sm:mt-0">
+                    <h4 className="font-bold text-white mb-4 md:mb-6 uppercase tracking-wider text-xs">Stay in Touch</h4>
                     <p className="opacity-80 font-light mb-4">Subscribe to our newsletter for 10% off your first order.</p>
-                    <div className="flex bg-white/10 rounded-full p-1 border border-white/20 focus-within:border-white/50 transition">
+                    <div className="flex flex-col sm:flex-row bg-transparent sm:bg-white/10 rounded-2xl sm:rounded-full p-0 sm:p-1 border-0 sm:border sm:border-white/20 sm:focus-within:border-white/50 transition gap-3 sm:gap-0">
                         <input
                             type="email"
                             placeholder="Enter your email"
-                            className="bg-transparent text-white px-4 outline-none w-full text-sm placeholder:text-white/50"
+                            className="bg-white/10 sm:bg-transparent rounded-full sm:rounded-none text-white px-4 md:px-6 outline-none w-full h-[50px] text-sm placeholder:text-white/50 border border-white/20 sm:border-0"
                         />
-                        <button className="bg-white text-[#4E612B] px-6 py-2 rounded-full font-bold hover:bg-[#F2F5E9] transition">
+                        <button className="bg-white text-[#4E612B] px-6 py-3 sm:py-2 h-[50px] sm:h-auto rounded-full font-bold hover:bg-[#F2F5E9] transition shrink-0">
                             Subscribe
                         </button>
                     </div>
 
                     {/* Social Icons Placeholder */}
-                    <div className="flex gap-4">
+                    <div className="flex gap-4 mt-6">
                         {[
                             { Icon: FaFacebookF, color: "#1877F2", label: "Facebook" },
                             { Icon: FaInstagram, color: "#E4405F", label: "Instagram" },
@@ -88,13 +88,13 @@ export default function Footer() {
             </div>
 
             {/* Huge ORANIC Text */}
-            <div className="flex justify-center flex-col items-center border-t border-white/10 pt-10 ">
-                <p className="opacity-50 text-xs mt-2">&copy; {new Date().getFullYear()} Oranic Cosmetics. All Rights Reserved.</p>
+            <div className="flex justify-center flex-col items-center border-t border-white/10 pt-10">
+                <p className="opacity-50 text-xs sm:text-sm mt-2 text-center">&copy; {new Date().getFullYear()} Oranic Cosmetics. All Rights Reserved.</p>
                 {/* <h1 className="text-[15vw]  bg-clip-text bg-gradient-to-b from-white via-white/80 to-transparent leading-none font-serif font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#6B833A] to-[#F7F8EE]/30 tracking-widest select-none">
                     ORANIC
                 </h1> */}
 
-                <h1 className="text-[20vw] bg-clip-text bg-gradient-to-b from-white via-white/90 to-transparent leading-[0.8] font-bold tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-[#6B833A] to-[#F7F8EE]/30 tracking-widest select-none">
+                <h1 className="text-[20vw] bg-clip-text bg-gradient-to-b from-white via-white/90 to-transparent leading-[0.8] font-bold tracking-tighter text-transparent select-none mt-4">
                     ORANIC
                 </h1>
             </div>
