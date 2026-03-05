@@ -1,4 +1,4 @@
-"use client"; // Next.js App Router ব্যবহার করলে এটি প্রয়োজন
+"use client"; 
 import { useState } from "react";
 import Image from "next/image";
 import { ArrowLeft, ArrowRight, ArrowUpRight } from "lucide-react";
@@ -8,19 +8,19 @@ const categories = [
     { title: "Body Care", image: "/ch2.png" },
     { title: "Hair Care", image: "/ch3.png" },
     { title: "Face Care", image: "/ch4.png" },
-    { title: "Organic", image: "/ch2.png" }, // বাড়তি ডাটা স্লাইডিং চেক করার জন্য
+    { title: "Organic", image: "/ch2.png" }, 
     { title: "New Serum", image: "/ch1.png" }
 ];
 
 export default function Categories() {
-    // বর্তমানে কোন ইনডেক্স থেকে দেখানো শুরু হবে তার জন্য State
+    
     const [currentIndex, setCurrentIndex] = useState(0);
 
-    // একবারে কয়টি কার্ড দেখাবে (ডেস্কটপে ৪টি)
+    
     const itemsToShow = 4;
 
     const nextSlide = () => {
-        // যদি শেষে পৌঁছে যায় তবে আবার শুরুতে ফিরবে (Loop)
+        
         if (currentIndex + itemsToShow < categories.length) {
             setCurrentIndex(currentIndex + 1);
         } else {
@@ -37,22 +37,22 @@ export default function Categories() {
     };
 
     return (
-        <section className="py-24 bg-[#F2F5E9] overflow-hidden">
-            <div className="max-w-7xl mx-auto px-6">
+        <section className="py-12 md:py-20 px-6 md:px-8 bg-[#F2F5E9] overflow-hidden">
+            <div className="max-w-7xl mx-auto">
 
                 <div className="flex flex-col md:flex-row items-start md:items-end justify-between mb-12 gap-6 md:gap-0">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1C2413]">
                         Choose by Category
                     </h2>
                     <div className="flex gap-4 pt-4">
-                        {/* বাটন ক্লিকে prevSlide ফাংশন কল হবে */}
+                       
                         <button
                             onClick={prevSlide}
                             className="w-12 h-12 rounded-full border border-[#4E612B] flex items-center justify-center text-[#4E612B] hover:bg-[#4E612B] hover:text-white transition active:scale-90"
                         >
                             <ArrowLeft size={20} />
                         </button>
-                        {/* বাটন ক্লিকে nextSlide ফাংশন কল হবে */}
+                     
                         <button
                             onClick={nextSlide}
                             className="w-12 h-12 rounded-full border border-[#4E612B] flex items-center justify-center text-[#4E612B] hover:bg-[#4E612B] hover:text-white transition active:scale-90"
@@ -62,12 +62,12 @@ export default function Categories() {
                     </div>
                 </div>
 
-                {/* স্লাইডিং এনিমেশনের জন্য কন্টেইনার */}
+               
                 <div className="relative">
                     <div
                         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 transition-transform duration-500 ease-in-out"
                     >
-                        {/* slice ব্যবহার করে নির্দিষ্ট ইনডেক্সের ডাটা দেখানো হচ্ছে */}
+                     
                         {categories.slice(currentIndex, currentIndex + itemsToShow).map((cat, i) => (
                             <div
                                 key={i}
@@ -81,7 +81,7 @@ export default function Categories() {
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
 
-                                {/* Gradient Overlay */}
+                              
                                 <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
                                 {/* Content: The Frosted Title Bar */}

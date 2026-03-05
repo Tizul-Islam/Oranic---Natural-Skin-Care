@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 export default function Footer() {
     return (
-        <footer className="bg-[#4E612B] text-[#F7F8EE] pt-16 md:pt-24 pb-8 overflow-hidden relative px-4 md:px-6">
+        <footer className="bg-[#4E612B] text-[#F7F8EE] pt-12 md:pt-20 pb-8 overflow-hidden relative px-6 md:px-8">
             <div className="max-w-7xl mx-auto mb-16 md:mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 text-sm">
 
                 {/* <div className="space-y-4">
@@ -94,7 +94,7 @@ export default function Footer() {
                     ORANIC
                 </h1> */}
 
-                <h1 className="text-[20vw] bg-clip-text bg-gradient-to-b from-white via-white/90 to-transparent leading-[0.8] font-bold tracking-tighter text-transparent select-none mt-4">
+                <h1 className="text-[24vw] bg-clip-text bg-gradient-to-b from-white via-white/90 to-transparent leading-[0.8] font-bold tracking-tighter text-transparent select-none mt-4">
                     ORANIC
                 </h1>
             </div>

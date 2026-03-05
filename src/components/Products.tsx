@@ -16,17 +16,17 @@ const products = [
 const categories = ["Face Care", "Body Care", "Hair Care", "Organic"];
 
 export default function Products() {
-    // ডিফল্টভাবে 'All' সেট করা থাকবে যাতে শুরুতে সব প্রোডাক্ট দেখা যায়
+
     const [selectedCategory, setSelectedCategory] = useState("All");
 
-    // ফিল্টারিং লজিক: যদি 'All' হয় তবে সব দেখাবে, নাহলে ক্যাটাগরি অনুযায়ী ফিল্টার করবে
+    // 'All' 
     const filteredProducts = selectedCategory === "All"
         ? products
         : products.filter((p) => p.type === selectedCategory);
 
     return (
-        <section className="py-24 bg-white">
-            <div className="max-w-7xl mx-auto px-4 md:px-6">
+        <section className="py-12 md:py-20 bg-white px-6 md:px-8 ">
+            <div className=" max-w-7xl  mx-auto ">
                 <div className="flex flex-col lg:flex-row items-start lg:items-end justify-between mb-12 gap-6 lg:gap-8">
                     <div>
                         <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-bold text-[#1C2413] mb-4">
@@ -48,7 +48,7 @@ export default function Products() {
                         </div>
                     </div>
 
-                    {/* View All বাটন: এখানে ক্লিক করলে setSelectedCategory("All") হবে */}
+                    {/*  setSelectedCategory("All") */}
                     <button
                         onClick={() => setSelectedCategory("All")}
                         className={`text-[#4E612B] text-lg lg:text-2xl border border-[#4E612B] py-3 px-6 lg:py-5 lg:px-8 rounded-full font-medium hover:text-[#1C2413] flex items-center gap-2 transition group whitespace-nowrap w-full sm:w-auto justify-center ${selectedCategory === "All" ? "bg-[#F2F5E9]" : "bg-transparent"
@@ -58,10 +58,10 @@ export default function Products() {
                     </button>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 xl:gap-8">
                     {filteredProducts.map((p, i) => (
-                        <div key={i} className="group bl-5 rounded-lg outline-1 outline-offset-6 outline-black/30 flex flex-col cursor-pointer sm:min-w-0 min-w-full h-auto">
-                            <div className="relative aspect-[4/5] sm:aspect-square w-full sm:h-[290px] rounded-lg bg-[#F2F5E9] overflow-hidden mb-4">
+                        <div key={i} className="group bl-5 rounded-lg outline-1 outline-offset-6 outline-black/30 flex flex-col cursor-pointer  w-full h-[400px] sm:w-full sm:h-[400px] lg:w-full lg:h-auto">
+                            <div className="relative aspect-[4/5] sm:aspect-square w-full sm:h-[260px] rounded-lg bg-[#F2F5E9] overflow-hidden mb-4">
                                 <Image
                                     src={p.image}
                                     alt={p.name}

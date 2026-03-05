@@ -3,11 +3,11 @@ import { Star, ArrowLeft, ArrowRight } from "lucide-react";
 
 export default function Reviews() {
     return (
-        <section className=" bg-[#F2F5E9] overflow-hidden">
-            <div className="py-24 max-w-7xl mx-auto px-4 md:px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-24 items-center">
+        <section className=" bg-[#F2F5E9] overflow-hidden px-6 md:px-8">
+            <div className="py-12 md:py-20 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-24 items-center">
 
                 {/* Left Side: Testimonial */}
-                <div className="space-y-10 order-2 lg:order-1 relative z-10 w-full">
+                <div className="space-y-10  order-2 lg:order-1 mt-12 sm:mt-0 relative z-10 w-full">
                     <h2 className="text-4xl md:text-5xl font-serif font-bold text-[#1C2413]">
                         Customer Reviews!
                     </h2>
@@ -55,7 +55,7 @@ export default function Reviews() {
                 </div>
 
                 {/* Right Side: Image and Floating Card */}
-                <div className="relative order-1 lg:order-2 w-full h-[350px] sm:h-[450px] md:h-[500px] lg:h-[600px] rounded-[2rem] lg:rounded-[2.5rem] group mt-8 lg:mt-0">
+                <div className="relative order-1 lg:order-2 w-full  h-[350px] sm:h-[450px] md:h-[500px] lg:h-[600px] rounded-[2rem] lg:rounded-[2.5rem] group mt-8 lg:mt-0">
                     <Image
                         src="/review.png"
                         alt="Applying Cream"
@@ -64,7 +64,7 @@ export default function Reviews() {
                     />
 
                     {/* Floating Product Card */}
-                    <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-left-24 lg:-translate-x-0 bg-white p-2 rounded-lg shadow-2xl flex md:hidden lg:flex flex-col items-center gap-3 border border-gray-100 w-[240px] sm:w-[281px] h-auto z-20 scale-90 sm:scale-100 lg:scale-95 xl:scale-100 origin-bottom lg:origin-center">
+                    <div className="absolute -bottom-16 left-1/2 -translate-x-1/2 lg:top-1/2 lg:-translate-y-1/2 lg:-left-36 lg:-translate-x-0 bg-white p-2 rounded-lg shadow-2xl flex md:hidden lg:flex flex-col items-center gap-3 border border-gray-100 w-[240px] sm:w-[281px] h-auto z-20 scale-90 sm:scale-100 lg:scale-95 xl:scale-100 origin-bottom lg:origin-center">
                         <div className="relative aspect-square w-full h-[220px] sm:h-[290px] rounded-lg bg-[#F2F5E9] overflow-hidden">
                             <Image
                                 src="/product.png"
@@ -81,18 +81,18 @@ export default function Reviews() {
                                 <h3 className="font-serif text-[16px] sm:text-[20px] text-[#1C2413] leading-tight tracking-tight">
                                     Face Care Serum
                                 </h3>
-                                <div className="flex justify-center sm:justify-start items-baseline gap-2 mt-0.5">
+                                <div className="flex justify-center sm:justify-start items-baseline gap-4 mt-0.5">
                                     <span className="text-[20px] sm:text-[26px] font-bold text-[#1C2413]">
                                         $45.00
                                     </span>
                                     <span className="text-[#9CA3AF] line-through text-sm sm:text-lg font-serif">
                                         $49.00
                                     </span>
-                                </div>
+                                    <button className="bg-[#606c1e] w-full sm:w-auto mt-0 md:mt-2  text-white px-4 py-2 md:px-4 md:py-2 rounded-full font-serif text-base md:text-lg hover:bg-[#4d5718] transition-all duration-200 active:scale-95 shadow-lg shadow-olive-900/5 whitespace-nowrap">
+                                    Buy Now
+                                </button>
+                                </div>                                
                             </div>
-                            <button className="bg-[#606c1e] w-full sm:w-auto mt-0 md:mt-2 text-white px-4 py-2 md:px-4 md:py-2 rounded-full font-serif text-base md:text-lg hover:bg-[#4d5718] transition-all duration-200 active:scale-95 shadow-lg shadow-olive-900/5 whitespace-nowrap">
-                                Buy Now
-                            </button>
                         </div>
                     </div>
                 </div>

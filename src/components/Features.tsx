@@ -3,7 +3,7 @@ import { Leaf, Award, Recycle, ShieldCheck, ArrowUpRight, ArrowRight } from "luc
 
 export default function Features() {
     return (
-        <section className="px-4 pb-12 pt-12 lg:pt-0 sm:px-6 lg:pl-16 xl:pl-[104px] lg:pr-0 lg:pb-0 flex flex-col lg:flex-row items-center gap-12 lg:gap-8 xl:gap-16 bg-[#ffffff]">
+        <section className="px-6 pb-12 pt-12 lg:pt-0 sm:px-6 lg:pl-16 xl:pl-[80px] lg:pr-0 lg:pb-0 flex flex-col lg:flex-row items-center gap-12 lg:gap-0 xl:gap-0 bg-[#ffffff]">
             <div className="flex-1 space-y-10 lg:space-y-12 w-full max-w-xl lg:max-w-none mx-auto lg:py-20 lg:pr-8 xl:pr-0">
                 <div className="max-w-md xl:max-w-lg">
                     <h2 className="text-4xl md:text-5xl lg:text-5xl font-serif font-bold text-[#1C2413] leading-tight mb-4">
@@ -96,7 +96,7 @@ export default function Features() {
                 </div>
             </div>
 
-            <div className="flex-1 relative w-full aspect-[4/5] max-h-[600px] lg:max-h-[894px] overflow-hidden rounded-[2rem] lg:rounded-none lg:rounded-l-[4rem]">
+            <div className="flex-1 relative w-full px-8 aspect-[4/5] max-h-[894px] h-[894px] overflow-hidden rounded-[2rem] lg:rounded-none ">
                 <Image
                     src="/frature.png"
                     alt="Woman with nature leaf"

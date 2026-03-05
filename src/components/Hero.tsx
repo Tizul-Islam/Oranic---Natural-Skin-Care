@@ -26,10 +26,10 @@ export default function Hero() {
             {/* Dark gradient overlay to make text readable */}
             {/* <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/20 to-transparent"></div> */}
 
-            <div className="relative mt-24 lg:mt-[110px] z-10 max-w-7xl mx-auto px-4 md:px-6 w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0">
+            <div className="relative mt-24 lg:mt-140 z-10 max-w-7xl mx-auto px-6 md:px-8 w-full flex flex-col lg:flex-row items-center justify-between gap-10 lg:gap-0">
 
                 {/* Left Content */}
-                <div className="max-w-xl text-white space-y-4 md:space-y-6 pt-10 md:pt-20 text-center lg:text-left flex flex-col xl:pl-4 items-center lg:items-start">
+                <div className="max-w-xl text-white space-y-4 md:space-y-6 md:pt-20 text-center lg:text-left flex flex-col items-center lg:items-start">
                     <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold leading-tight tracking-tight text-[#F7F8EE]">
                         Natural Makeup<br />For Radiant Skin
                     </h1>
@@ -42,9 +42,11 @@ export default function Hero() {
                 </div>
 
                 {/* Floating Product Card */}
-                <div className="flex items-center mt-6 lg:mt-9 justify-center p-4 md:p-6 font-sans w-full lg:w-auto xl:pr-4">
+
+
+                <div className="flex items-center mt-6 lg:mt-28 justify-center font-sans w-full lg:w-auto">
                     {/* Main Card Container */}
-                    <div className="w-full sm:max-w-[330px] h-auto lg:h-[380px] bg-white rounded-[0.8rem] p-5 md:p-6 shadow-sm border border-stone-100 group transition-all duration-300 hover:shadow-md">
+                    <div className="w-full max-w-[350px] lg:max-w-[420px] bg-white rounded-[0.8rem] p-3 md:p-4 shadow-sm border border-stone-100 group transition-all duration-300 hover:shadow-md">
 
                         {/* Header: Title, Price, and Icon */}
                         <div className="flex justify-between items-start mb-4 md:mb-6">
@@ -69,7 +71,7 @@ export default function Hero() {
                             <img
                                 src="/c1.png"
                                 alt="Cucumber Extract Product"
-                                className="w-full h-[200px] md:h-[245px] object-cover transition-transform duration-500 group-hover:scale-105"
+                                className="w-full h-[180px] md:h-[200px] object-cover transition-transform duration-500 group-hover:scale-105"
                             />
                         </div>
                     </div>
