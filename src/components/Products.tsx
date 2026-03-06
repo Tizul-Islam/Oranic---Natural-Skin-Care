@@ -68,9 +68,7 @@ export default function Products() {
                                     fill
                                     className="object-cover transition duration-700 group-hover:scale-105"
                                 />
-                                {/* <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm text-[#4E612B] text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-                                    {p.type}
-                                </div> */}
+                              
                                 {p.discount && (
                                     <div className="absolute left-0 top-0 bg-[#606c1e] text-white text-base max-w-max md:text-lg font-bold p-4 lg:p-6 py-1 lg:py-2 rounded-br-2xl shadow-sm z-10">
                                         {p.discount}%

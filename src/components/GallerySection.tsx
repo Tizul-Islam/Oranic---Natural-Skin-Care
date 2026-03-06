@@ -18,9 +18,7 @@ const GallerySection = () => {
               key={item.id}
               className="group relative aspect-[3/4] overflow-hidden rounded-[2.5rem] cursor-pointer bg-neutral-200"
             >
-              {/* Use 'fill' instead of fixed width/height for gallery cards.
-                  This allows the image to perfectly cover the 3:4 aspect ratio box.
-              */}
+            
               <Image
                 src={item.src}
                 alt={item.alt}

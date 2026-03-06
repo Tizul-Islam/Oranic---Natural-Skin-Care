@@ -8,14 +8,9 @@ import {
 export default function Footer() {
     return (
         <footer className="bg-[#4E612B] text-[#F7F8EE] pt-12 md:pt-20 pb-8 overflow-hidden relative px-6 md:px-8">
-            <div className="max-w-7xl mx-auto mb-16 md:mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 text-sm">
+            <div className="max-w-7xl mx-auto mb-10 md:mb-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 text-sm">
 
-                {/* <div className="space-y-4">
-                    <h4 className="font-bold mb-6 text-white text-lg font-serif tracking-widest uppercase">ORANIC</h4>
-                    <p className="opacity-80 leading-relaxed font-light">
-                        Bringing the pure essence of nature directly to your skincare routine. Organic, cruelty-free, and beautiful.
-                    </p>
-                </div> */}
+            
 
                 <div className="space-y-4">
                     <h4 className="font-bold text-white mb-4 md:mb-6 uppercase tracking-wider text-xs">Product</h4>
@@ -90,11 +85,10 @@ export default function Footer() {
             {/* Huge ORANIC Text */}
             <div className="flex justify-center flex-col items-center border-t border-white/10 pt-10">
                 <p className="opacity-50 text-xs sm:text-sm mt-2 text-center">&copy; {new Date().getFullYear()} Oranic Cosmetics. All Rights Reserved.</p>
-                {/* <h1 className="text-[15vw]  bg-clip-text bg-gradient-to-b from-white via-white/80 to-transparent leading-none font-serif font-bold text-transparent bg-clip-text bg-gradient-to-b from-[#6B833A] to-[#F7F8EE]/30 tracking-widest select-none">
-                    ORANIC
-                </h1> */}
-
-                <h1 className="text-[24vw] bg-clip-text bg-gradient-to-b from-white via-white/90 to-transparent leading-[0.8] font-bold tracking-tighter text-transparent select-none mt-4">
+             
+                <h1 className="text-[24vw] bg-clip-text bg-gradient-to-b from-white 
+                via-white/30 to-transparent leading-[0.8] font-bold tracking-tighter 
+                text-transparent select-none">
                     ORANIC
                 </h1>
             </div>
